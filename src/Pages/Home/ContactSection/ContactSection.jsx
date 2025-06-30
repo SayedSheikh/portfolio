@@ -59,7 +59,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="my-12 px-4 text-white bg-[#030712]">
+    <section id="contact" className="py-12 px-4 text-white bg-[#030712]">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-12">
         {/* Contact Info Left */}
         <div className="flex-1">

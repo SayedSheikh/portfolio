@@ -8,7 +8,7 @@ const ConnectSection = () => {
     const section = document.getElementById(id);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - 350, // adjust for navbar height
+        top: section.offsetTop - 250, // adjust for navbar height
         behavior: "smooth",
       });
     }
