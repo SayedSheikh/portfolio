@@ -72,7 +72,7 @@ const Navbar = ({ location }) => {
       className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-transparent">
       <nav className="max-w-[900px] mx-auto px-4 py-5 flex flex-row-reverse justify-between items-center text-white">
         <a
-          href="https://drive.google.com/file/d/1U-bZQPTC7DpZWxZAeDVcUZHM7PAR5qVN/view"
+          href="https://drive.google.com/file/d/10tJmGqNj6ZH4k-nu3D50Fn-KHrn6nQ3x/view?usp=drive_link"
           target="_blank"
           className="text-base">
           <CustomButton className="flex items-center gap-2 ">

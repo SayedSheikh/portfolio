@@ -10,10 +10,10 @@ import CustomButton from "../../Shared/CustomeBtn/CustomButton";
 
 const HeroSection = () => {
   return (
-    <section className="my-25 px-4 text-white bg-[#030712]">
+    <section className="my-28 px-4 text-white bg-[#030712]">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row-reverse item-satrt md:items-center justify-between gap-8">
         {/* Image Section */}
-        <div className="w-[180px] h-[250px] overflow-hidden rounded-xl shadow-lg">
+        <div className="w-[180px] h-[250px] overflow-hidden rounded-[8px] shadow-[0px_0px_60px_-15px_rgba(0,0,255,0.5)]">
           <img
             src="/sayed.jpg" // Replace with your image path
             alt="Sayed Sheikh"
@@ -36,7 +36,7 @@ const HeroSection = () => {
           {/* Buttons/Icons */}
           <div className="flex items-center gap-4 flex-wrap">
             <a
-              href="https://drive.google.com/file/d/1U-bZQPTC7DpZWxZAeDVcUZHM7PAR5qVN/view"
+              href="https://drive.google.com/file/d/10tJmGqNj6ZH4k-nu3D50Fn-KHrn6nQ3x/view?usp=drive_link"
               target="_blank">
               <CustomButton className="flex items-center gap-2 ">
                 <FaGoogleDrive className="" />{" "}
