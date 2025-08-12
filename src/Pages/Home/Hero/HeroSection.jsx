@@ -7,11 +7,29 @@ import {
   FaGoogleDrive,
 } from "react-icons/fa";
 import CustomButton from "../../Shared/CustomeBtn/CustomButton";
+import { TypeAnimation } from "react-type-animation";
+import { useEffect, useState } from "react";
+const quoteColors = [
+  "text-red-400",
+  "text-blue-400",
+  "text-green-400",
+  "text-yellow-400",
+  "text-pink-400",
+  "text-purple-400",
+];
 
 const HeroSection = () => {
+  const [colorIndex, setColorIndex] = useState(0);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setColorIndex((prev) => (prev + 1) % quoteColors.length);
+    }, 1500);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <section className="my-28 px-4 text-white bg-[#030712]">
-      <div className="max-w-[900px] mx-auto flex flex-col md:flex-row-reverse item-satrt md:items-center justify-between gap-8">
+      <div className="max-w-[900px] mx-auto flex flex-col md:flex-row-reverse item-start md:items-center justify-between gap-8">
         {/* Image Section */}
         <div className="w-[180px] h-[250px] overflow-hidden rounded-[8px] shadow-[0px_0px_60px_-15px_rgba(0,0,255,0.5)]">
           <img
@@ -23,10 +41,30 @@ const HeroSection = () => {
 
         {/* Text Section */}
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 font-calistoga">
+          <h1 className="text-3xl md:text-4xl font-bold mb-0 font-calistoga">
             Hi, Sayed here.
           </h1>
-          <p className="text-lg text-gray-300 mb-3">Web Developer & Learner</p>
+          {/* <p className="text-lg text-gray-300 mb-3">Web Developer & Learner</p> */}
+          <div
+            className={`${quoteColors[colorIndex]} transition-colors duration-1000 font-cookie`}>
+            <TypeAnimation
+              sequence={[
+                "Web Developer.", // Types 'One'
+                1200, // Waits 1s
+                "Learner..", // Deletes 'One' and types 'Two'
+                1000, // Waits 2s
+                "Problem Solver...", // Deletes 'One' and types 'Two'
+                1100, // Waits 2s
+                "Problem Solver & Thinker...", // Deletes 'One' and types 'Two'
+                1300, // Waits 2s
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: "2rem", display: "inline-block" }}
+              className={` font-500`}
+            />
+          </div>
           <p className="text-gray-400 mb-4">
             Passionate about building interactive web applications.
             <br />

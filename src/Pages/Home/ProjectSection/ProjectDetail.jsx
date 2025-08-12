@@ -2,6 +2,7 @@ import { Link, useLocation, useParams } from "react-router";
 import spareImage from "./../../../../public/spareABite.jpg";
 import flatifyImage from "./../../../../public/flatify.jpg";
 import appOceanImage from "./../../../../public/appOcean.jpg";
+import arcLaneImage from "./../../../../public/arcLane.jpg";
 import Navbar from "../Navbar/Navbar";
 import CustomButton from "../../Shared/CustomeBtn/CustomButton";
 import { LuGithub } from "react-icons/lu";
@@ -9,6 +10,28 @@ import { GoLinkExternal } from "react-icons/go";
 import { useEffect } from "react";
 
 const projects = {
+  arclane: {
+    title: "ArcLane",
+    techStack: [
+      "React 19",
+      "Flowbite",
+      "Firebase Auth",
+      "Axios / Interceptor",
+      "TanStack React Query",
+      "JWT Auth & Verification",
+      "Stripe",
+      "React Hook Form",
+    ],
+    liveLink: "https://arclane.web.app",
+    github: "https://github.com/SayedSheikh/arclane-CLient",
+    description:
+      "ArcLane is a complete building management system with role-based dashboards for Admins, Members, and Users. It allows managing apartments, payments, announcements, and user roles. Features include rent due reminders, coupons system, interactive maps, email notifications, room availability status, secure JWT authentication, and Stripe payment integration.",
+    challenges:
+      "Implementing complex role-based dashboards, integrating multiple third-party services like Stripe, EmailJS, and React Leaflet while keeping routes secure with JWT authentication.",
+    futurePlans:
+      "Add advanced analytics for admins, real-time chat between members, and mobile app support.",
+    image: arcLaneImage,
+  },
   spareabite: {
     title: "Spare A Bite",
     techStack: ["React", "Firebase", "TailwindCSS", "DaisyUI", "Framer Motion"],

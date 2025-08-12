@@ -3,8 +3,13 @@ import ProjectCard from "./ProjectCard";
 import spareImage from "./../../../../public/spareABite.jpg";
 import flatifyImage from "./../../../../public/flatify.jpg";
 import appOceanImage from "./../../../../public/appOcean.jpg";
+import arcLaneImage from "./../../../../public/arcLane.jpg";
 
 const links = [
+  {
+    github: "https://github.com/SayedSheikh/ArcLane-CLient",
+    site: "https://arclane.web.app",
+  },
   {
     github: "https://github.com/SayedSheikh/SpareABite",
     site: "https://spare-a-bite.web.app",
@@ -27,20 +32,27 @@ const ProjectsSection = () => {
         <div className="flex flex-col gap-6">
           <ProjectCard
             link={links[0]}
+            title="ArcLane"
+            image={arcLaneImage}
+            route="/projects/arclane"
+            description="ArcLane is a complete building management system with role-based dashboards for Admins, Members, and Users. It allows managing apartments, payments, announcements, and user roles. Features include rent due reminders, coupons system, interactive maps, email notifications, room availability status, secure JWT authentication, and Stripe payment integration."
+          />
+          <ProjectCard
+            link={links[1]}
             title="Spare A Bite"
             image={spareImage}
             route="/projects/spareabite"
             description="Spare A Bite is a food-sharing platform designed to reduce food waste by connecting local donors with recipients in need. It features real-time updates, Firebase authentication, and a clean, modern UI built using React and TailwindCSS. The platform encourages sustainable community support and promotes food accessibility."
           />
           <ProjectCard
-            link={links[1]}
+            link={links[2]}
             title="Flatify"
             image={flatifyImage}
             route="/projects/flatify"
             description="Flatify is a feature-rich web application that allows users to browse, post, and manage flat or roommate listings with ease. It includes Firebase authentication, responsive design, carousel banners, user interaction through likes and reviews, and smooth animations, offering a complete property sharing experience."
           />
           <ProjectCard
-            link={links[2]}
+            link={links[3]}
             title="AppOcean"
             image={appOceanImage}
             route="/projects/appocean"
