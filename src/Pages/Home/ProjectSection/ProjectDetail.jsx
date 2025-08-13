@@ -28,6 +28,8 @@ const projects = {
       "ArcLane is a complete building management system with role-based dashboards for Admins, Members, and Users. It allows managing apartments, payments, announcements, and user roles. Features include rent due reminders, coupons system, interactive maps, email notifications, room availability status, secure JWT authentication, and Stripe payment integration.",
     challenges:
       "Implementing complex role-based dashboards, integrating multiple third-party services like Stripe, EmailJS, and React Leaflet while keeping routes secure with JWT authentication.",
+    potentialImprovements:
+      "Improve performance by implementing lazy loading for dashboard components, optimize database queries for faster data retrieval, and enhance mobile responsiveness.",
     futurePlans:
       "Add advanced analytics for admins, real-time chat between members, and mobile app support.",
     image: arcLaneImage,
@@ -41,6 +43,8 @@ const projects = {
       "Spare A Bite is a food-sharing platform designed to reduce food waste by connecting local donors with recipients in need. It features real-time updates, Firebase authentication, and a clean, modern UI built using React and TailwindCSS. The platform encourages sustainable community support and promotes food accessibility.",
     challenges:
       "Implementing real-time food updates and managing Firebase authentication flow.",
+    potentialImprovements:
+      "Enhance scalability with Firestore indexing, improve donor–recipient matching with AI-driven suggestions, and integrate push notifications for new food postings.",
     futurePlans: "Add location-based filters and admin moderation tools.",
     image: spareImage,
   },
@@ -53,6 +57,8 @@ const projects = {
       "Flatify is a feature-rich web application that allows users to browse, post, and manage flat or roommate listings with ease. It includes Firebase authentication, responsive design, carousel banners, user interaction through likes and reviews, and smooth animations, offering a complete property sharing experience.",
     challenges:
       "Handling responsive Swiper layouts and multi-user post management.",
+    potentialImprovements:
+      "Improve search performance with advanced query optimization, add map-based flat browsing, and enhance review authenticity with AI-powered spam detection.",
     futurePlans: "Add chat system and more filters for search.",
     image: flatifyImage,
   },
@@ -65,6 +71,8 @@ const projects = {
       "AppOcean is a sleek and fully responsive app store built with React, offering an intuitive interface for discovering applications by category. It incorporates Firebase for secure authentication, dynamic app listing components, smooth routing, and animated user feedback for a rich browsing experience.",
     challenges:
       "Structuring category-based dynamic rendering and integrating Firebase securely.",
+    potentialImprovements:
+      "Implement infinite scroll for better UX, add caching for offline browsing, and integrate analytics to track app popularity trends.",
     futurePlans: "Add download tracking and user-based recommendations.",
     image: appOceanImage,
   },
@@ -107,6 +115,9 @@ const ProjectDetail = () => {
         <h2 className="text-2xl font-semibold mb-2">Challenges</h2>
         <p className="mb-4 text-gray-300">{project.challenges}</p>
 
+        <h2 className="text-2xl font-semibold mb-2">Potential Improvements</h2>
+        <p className="mb-4 text-gray-300">{project.potentialImprovements}</p>
+
         <h2 className="text-2xl font-semibold mb-2">Future Plans</h2>
         <p className="mb-4 text-gray-300">{project.futurePlans}</p>
 
@@ -119,7 +130,6 @@ const ProjectDetail = () => {
               border={"none"}
               className="flex items-center gap-2 group border h-10 w-25 text-[18px] ">
               <span className="group-hover:text-blue-500">Github</span>
-
               <LuGithub className="group-hover:text-blue-500 group-hover:scale-125 duration-300" />
             </CustomButton>
           </Link>

@@ -1,4 +1,3 @@
-// src/components/HeroSection.jsx
 import {
   FaLinkedin,
   FaGithub,
@@ -31,13 +30,16 @@ const HeroSection = () => {
     <section className="my-28 px-4 text-white bg-[#030712]">
       <div className="max-w-[900px] mx-auto flex flex-col md:flex-row-reverse item-start md:items-center justify-between gap-8">
         {/* Image Section */}
-        <div className="w-[180px] h-[250px] overflow-hidden rounded-[8px] shadow-[0px_0px_60px_-15px_rgba(0,0,255,0.5)]">
+        <div
+          className="w-[180px] h-[250px] overflow-hidden rounded-[8px]
+         shadow-[0px_0px_60px_-5px_rgba(0,0,255,0.5)] border border-blue-700">
           <img
-            src="/sayed.jpg" // Replace with your image path
+            src="/picofme.png" // Replace with your image path
             alt="Sayed Sheikh"
             className="w-full h-full object-cover"
           />
         </div>
+        {/* shadow-[0px_0px_60px_-15px_rgba(0,0,255,0.5)] */}
 
         {/* Text Section */}
         <div className="flex-1">

@@ -6,11 +6,13 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import ProjectDetail from "./Pages/Home/ProjectSection/ProjectDetail.jsx";
 import { Toaster } from "react-hot-toast";
+import Error from "./Pages/Error/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error></Error>,
   },
   {
     path: "/projects/:id",
